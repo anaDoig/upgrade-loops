@@ -7,6 +7,8 @@ products.forEach(function (element) {
     }
 });
 
+console.log('-----------');
+
 /* Iteración 2 */
 
 const alumns = [
@@ -21,12 +23,19 @@ for (let key in alumns) {
     if((alumns[key].T1 === true && alumns[key].T2 === true) ||
         (alumns[key].T2 === true && alumns[key].T3) === true ||
         (alumns[key].T1 === true && alumns[key].T3) === true ) {
-            console.log(`El alumno ${alumns[key].name} está aprobado`);
+            console.log(`${alumns[key].name} está aprobado`);
             alumns[key].isApproved = true;
-            console.log(alumns[key]);
         } else {
-            console.log(`El alumno ${alumns[key].name} está suspendido`);
+            console.log(`${alumns[key].name} está suspendido`);
             alumns[key].isApproved = false;
-            console.log(alumns[key]);
         }
+}
+
+console.log('-----------');
+
+/* Iteración 3 */
+const placesToTravel = ['Japon', 'Venecia', 'Murcia', 'Santander', 'Filipinas', 'Madagascar']
+
+for (let key in placesToTravel) {
+    console.log(placesToTravel[key]);
 }
