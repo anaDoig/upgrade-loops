@@ -38,4 +38,18 @@ const placesToTravel = ['Japon', 'Venecia', 'Murcia', 'Santander', 'Filipinas', 
 
 for (let value of placesToTravel) {
     console.log(value);
+};
+
+/* Iteración 4 */
+const alien = {
+    name: 'Wormuck',
+    race: 'Cucusumusu',
+    planet: 'Eden',
+    weight: '259kg'
+};
+
+console.log('-----------');
+
+for (key in alien) {
+    console.log(alien[key]);
 }
