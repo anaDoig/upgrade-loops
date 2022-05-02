@@ -40,6 +40,8 @@ for (let value of placesToTravel) {
     console.log(value);
 };
 
+console.log('-----------');
+
 /* Iteración 4 */
 const alien = {
     name: 'Wormuck',
@@ -52,4 +54,17 @@ console.log('-----------');
 
 for (key in alien) {
     console.log(alien[key]);
+}
+
+console.log('-----------');
+
+/* Iteración 5 */
+const placesToTravel2 = [{id: 5, name: 'Japan'}, {id: 11, name: 'Venecia'}, {id: 23, name: 'Murcia'}, {id: 40, name: 'Santander'}, {id: 44, name: 'Filipinas'}, {id: 59, name: 'Madagascar'}];
+
+for (let i = 0; i < placesToTravel2.length; i++) {
+    console.log(placesToTravel2[i]);
+    if (placesToTravel2[i].id === 11 || placesToTravel2[i].id === 40) {
+        placesToTravel2.splice(i, i);
+    }
+
 }
