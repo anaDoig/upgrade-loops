@@ -67,4 +67,22 @@ for (let i = 0; i < placesToTravel2.length; i++) {
         placesToTravel2.splice(i, i);
     }
 
-}
+};
+
+console.log('-----------');
+
+/* Iteración 6 */
+const toys = [
+    {id: 5, name: 'Buzz MyYear'}, 
+    {id: 11, name: 'Action Woman'}, 
+    {id: 23, name: 'Barbie Man'}, 
+    {id: 40, name: 'El gato con Guantes'},
+    {id: 40, name: 'El gato felix'}
+];
+
+for (value of toys) {
+    console.log(value.name);
+    if (value.name.includes('gato')) {
+        toys.splice(toys.indexOf(value), toys.indexOf(value));
+    }
+};
