@@ -36,6 +36,6 @@ console.log('-----------');
 /* Iteración 3 */
 const placesToTravel = ['Japon', 'Venecia', 'Murcia', 'Santander', 'Filipinas', 'Madagascar']
 
-for (let key in placesToTravel) {
-    console.log(placesToTravel[key]);
+for (let value of placesToTravel) {
+    console.log(value);
 }
