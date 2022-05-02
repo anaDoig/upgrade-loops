@@ -5,4 +5,28 @@ products.forEach(function (element) {
     if(element.includes('Camiseta')) {
         console.log(element);
     }
-})
+});
+
+/* Iteración 2 */
+
+const alumns = [
+    {name: 'Pepe Viruela', T1: false, T2: false, T3: true}, 
+    {name: 'Lucia Aranda', T1: true, T2: false, T3: true},
+    {name: 'Juan Miranda', T1: false, T2: true, T3: true},
+    {name: 'Alfredo Blanco', T1: false, T2: false, T3: false},
+    {name: 'Raquel Benito', T1: true, T2: true, T3: true}
+];
+
+for (let key in alumns) {
+    if((alumns[key].T1 === true && alumns[key].T2 === true) ||
+        (alumns[key].T2 === true && alumns[key].T3) === true ||
+        (alumns[key].T1 === true && alumns[key].T3) === true ) {
+            console.log(`El alumno ${alumns[key].name} está aprobado`);
+            alumns[key].isApproved = true;
+            console.log(alumns[key]);
+        } else {
+            console.log(`El alumno ${alumns[key].name} está suspendido`);
+            alumns[key].isApproved = false;
+            console.log(alumns[key]);
+        }
+}
